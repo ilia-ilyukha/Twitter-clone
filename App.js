@@ -8,6 +8,7 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import { Ionicons } from '@expo/vector-icons';
 import HomeScreen from './screens/HomeScreen';
 import NewTweet from './screens/NewTweet';
+import ProfileScreen from './screens/ProfileScreen';
 import SettingsScreen from './screens/SettingsScreen';
 import NotificationsScreen from './screens/NotificationsScreen';
 import SearchScreen from './screens/SearchScreen';
@@ -32,8 +33,8 @@ const HomeStackNavigator = () => {
           headerShown: false
         }} />
       <Stack.Screen name="New Tweet" component={NewTweet} />
-      {/* <Stack.Screen name="Tweet Screen" component={TweetScreen} />
-      <Stack.Screen name="Profile Screen" component={ProfileSreen} /> */}
+      {/* <Stack.Screen name="Tweet Screen" component={TweetScreen} /> */}
+      <Stack.Screen name="Profile Screen" component={ProfileScreen} />
     </Stack.Navigator>
   )
 }
