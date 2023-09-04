@@ -12,7 +12,7 @@ import ProfileScreen from './screens/ProfileScreen';
 import SettingsScreen from './screens/SettingsScreen';
 import NotificationsScreen from './screens/NotificationsScreen';
 import SearchScreen from './screens/SearchScreen';
-
+import TweetScreen from './screens/TweetScreen';
 
 
 const Stack = createStackNavigator();
@@ -29,11 +29,9 @@ const HomeStackNavigator = () => {
       <Stack.Screen
         name="Tab"
         component={TabNavigator}
-        screenOptions={{
-          headerShown: false
-        }} />
+        options={{ headerShown: false }} />
       <Stack.Screen name="New Tweet" component={NewTweet} />
-      {/* <Stack.Screen name="Tweet Screen" component={TweetScreen} /> */}
+      <Stack.Screen name="Tweet Screen" component={TweetScreen} />
       <Stack.Screen name="Profile Screen" component={ProfileScreen} />
     </Stack.Navigator>
   )
