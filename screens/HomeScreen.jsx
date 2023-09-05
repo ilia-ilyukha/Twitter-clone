@@ -33,7 +33,7 @@ export default function HomeScreen({ navigation }) {
     }
 
     const renderItem = ({ item }) => (
-        <View style={styles.tweetContainer}>
+        <View style={styles.container}>
             <TouchableOpacity onPress={() => gotoProfile()}>
 
                 <Image
@@ -136,8 +136,10 @@ const styles = StyleSheet.create({
     },
     tweet: {
         flex: 1,
-        width: '85%',
+        // width: '85%',
         // flexDirection: 'row',
+        paddingLeft: 10,
+        paddingRight: 10,
     },
     tweetContainer: {
         flex: 1,
